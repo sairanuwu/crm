@@ -26,11 +26,12 @@ public class CrmApplication {
 		Connection connection = orderService.getConnectionBdd();
 		try {
 			Statement st = connection.createStatement();
-			ResultSet rs = st.executeQuery("SELECT * FROM `customer` ORDER BY `customer`.`id` ASC;");
-			rs.next();
-			System.out.print("id: " + rs.getInt("id") + ", ");
-			System.out.print("surname: " + rs.getString("surname") + ", ");
-			System.out.print("name: " + rs.getString("name") + ", ");
+			// ResultSet rs = st.executeQuery("SELECT * FROM `customer` ORDER BY
+			// `customer`.`id` ASC;");
+			// rs.next();
+			// System.out.print("id: " + rs.getInt("id") + ", ");
+			// System.out.print("surname: " + rs.getString("surname") + ", ");
+			// System.out.print("name: " + rs.getString("name") + ", ");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
